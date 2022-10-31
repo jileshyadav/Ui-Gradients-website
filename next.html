@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="next.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<header>
+    <nav class="navbar navbar-dark bg-dark ">
+        <a href="#" class="m-lg-2 navbar-expand-lg navbar-brand fw-bold text-uppercase"> uigradents + S K I L L S H A R E
+        </a>
+
+        <form class="container-fixed justify-content-end">
+        <a class="btn btn-md btn-info" href="#" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg> Share on Twitter</a>
+        <a class="btn  btn-primary me-2 " href="https://www.facebook.com/jilesh.yadav.98/"  type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg> connect via facebook</a>
+        <a class="btn  btn-dark me-2 " href="#"  type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg></a>
+        
+        </form>
+    </nav>
+</header>
+
+
+    <body onkeypress="listenKey()"> 
+    <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+        <button  onclick="showPlate()" class="navbar-toggler" id="showBtn" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <a>
+            <span class="navbar-toggler-icon"></span>
+            <span> show all Gradients</span></a>
+        </button>
+        <button  onclick="hidePlate()" class="navbar-toggler" id="hideBtn" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <a>
+            <span class="navbar-toggler-icon"></span>
+            <span> hide all Gradients</span></a>
+        </button>
+
+        <form class=" container-fixed justify-content-between header2">
+            <span class=" col-form-label-md p-md-1 bg1" style="background-color: rgb(33, 185, 106);">&nbsp;</span>
+            <span class="color-name">#665548</span>
+            <span class="space">&nbsp; --> &nbsp;</span>
+            <span class=" col-form-label-md p-md-1 bg1" style="background-color: rgba(216, 209, 0, 0.518);">&nbsp;</span>
+            <span class="color-name">#456278</span>
+
+        </form>
+
+        <form class="container-fixed justify-content-end ">
+        <!-- reset button -->
+        <button class="btn btn-outline-success  m-0   type=" button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                <path
+                d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+            </svg></button>
+            <!-- reset button -->
+            <button class="btn btn-md btn-outline-secondary m-0" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                <path
+                d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
+            </svg></button>
+
+            <button class="btn btn-outline-success m-0 " type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg></button>
+            <button class="btn btn-md btn-outline-secondary m-0" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+            </svg></button>
+
+        </form>
+    </div>
+
+    </nav>
+    
+    <div id="background" class="background-page">
+        <p class="builder"> 
+            Build for the community by 
+        <a id="instalink" href="https://www.instagram.com/jilesh_yadav/">@_Jilesh</a> 
+        </p>
+    <div class="plates" id="plates">
+        
+        
+
+    </div>
+    </div>
+    
+
+<div>
+    <button class="carousel-control-prev justify-content-start carauselbtn " " onclick=" change()" type="button"
+    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next justify-content-end carauselbtn" " onclick=" change1()" type="button"
+    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<script>
+    var colors = [["#FF8C00", "#1cefff"],["pink", "violet"],["yellow","blue"], ["blue", "green"],["pink","orange"],["pink", "green"],["white","blue"], ["white", "green"],["black","orange"]]
+    document.getElementById("background").style.background = `linear-gradient(90deg,${colors[0][0]},${colors[0][1]})`;
+    sessionStorage.setItem("color", "0");
+
+
+    function change1() {
+        let num = parseInt(sessionStorage.getItem("color")) + 1;
+
+            if(num === colors.length){
+            num = 0;
+            }
+
+        document.getElementById("background").style.background = `linear-gradient(90deg,${colors[num][0]},${colors[num][1]})`;
+
+            sessionStorage.setItem("color", num);
+            if(num === colors.length-1){
+            sessionStorage.setItem("color", "-1"); 
+            }
+
+
+    }
+    function change() {
+        let num = parseInt(sessionStorage.getItem("color")) - 1;
+
+            if(num === -1){
+            num = colors.length-1;
+            }
+            if(num === -2){
+            num = colors.length-2;
+            }
+
+        document.getElementById("background").style.background = `linear-gradient(90deg,${colors[num][0]},${colors[num][1]})`;
+
+        sessionStorage.setItem("color", num);
+
+
+    }
+  // function listenKey(){
+  //   alert('hii')
+  // }
+
+
+
+
+
+    // function change1() {
+
+
+
+    //   let num = parseInt(sessionStorage.getItem("color")) + 1;
+    //   if (num === -1) {
+
+    //     document.getElementById("background").style.background = `linear-gradient(#8d2525,#4389A2)`;
+    //     sessionStorage.setItem("color", "-1");
+
+    //     return true;
+    //   }
+    //   document.getElementById("background").style.background = `linear-gradient(${colors[num][0]},${colors[num][1]})`;
+    //   sessionStorage.setItem("color", num);
+    //   if (num === colors.length - 1) {
+    //     sessionStorage.setItem("color", "-2");
+    //   }
+    // }
+
+
+    // function change1() {
+
+
+    //   var colors = [["#df3333", "#280cde"], ["green", "yellow"], ["blue", "green"]]
+
+    //   let num = parseInt(sessionStorage.getItem("color")) + 1;
+    //   if (num === -1) {
+
+    //     document.getElementById("background").style.background = `linear-gradient(#8d2525,#4389A2)`;
+    //     sessionStorage.setItem("color", "-1");
+
+    //     return true;
+    //   }
+    //   document.getElementById("background").style.background = `linear-gradient(${colors[num][0]},${colors[num][1]})`;
+    //   sessionStorage.setItem("color", num);
+    //   if (num === colors.length - 1) {
+    //     sessionStorage.setItem("color", "-2");
+    //   }
+    // }
+
+    // function change() {
+
+
+    //   var colors = [["#df3333", "#280cde"], ["green", "yellow"], ["blue", "green"]]
+
+    //   let num = parseInt(sessionStorage.getItem("color")) - 1;
+    //   if (num === -1) {
+
+    //     document.getElementById("background").style.background = `linear-gradient(#8d2525,#4389A2)`;
+    //     sessionStorage.setItem("color", "-1");
+
+    //     return true;
+    //   }
+    //   if (num === -3) {
+
+    //     document.getElementById("background").style.background = `linear-gradient(#8d2525,#4389A2)`;
+    //     sessionStorage.setItem("color", "-1");
+
+    //     return true;
+    //   }
+
+    //   document.getElementById("background").style.background = `linear-gradient(${colors[num][0]},${colors[num][1]})`;
+    //   sessionStorage.setItem("color", num);
+    //   if (num === colors.length - 1) {
+    //     sessionStorage.setItem("color", "-2");
+
+    //     document.getElementById("background").style.background = `linear-gradient(${colors[num][0]},${colors[num][1]})`;
+    //     sessionStorage.setItem("color", "-3");
+
+    //   }
+    // }
+        function thisColor(a,b){
+            hidePlate();
+            document.getElementById("background").style.background = `linear-gradient(90deg,${a},${b})`;
+
+        }
+        function showPlate() {
+            document.getElementById("plates").style.display = "flex";
+            document.getElementById("showBtn").style.display = "none";
+            document.getElementById("hideBtn").style.display = "block";
+            document.getElementById("plates").innerHTML = "";
+            for(let i = 0; i < colors.length; i++){
+            let myElement = `<div class="innerplate" style="background:linear-gradient(90deg,${colors[i][0]},${colors[i][1]}  )" onclick="thisColor('${colors[i][0]}','${colors[i][1]}')"></div>`;
+            document.getElementById("plates").innerHTML += myElement;
+            
+            }
+            
+        }
+        function hidePlate() {
+            document.getElementById("plates").style.display = "none";
+            document.getElementById("hideBtn").style.display = "none";
+            document.getElementById("showBtn").style.display = "block";
+        }
+        
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

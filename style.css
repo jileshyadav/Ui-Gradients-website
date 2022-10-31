@@ -1,0 +1,95 @@
+
+
+
+
+.logo{
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.header2{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+.bg1{
+    background-color: none;
+}
+
+.btn1{
+    margin: 0;
+    position: relative;
+    max-width: 100%;
+    
+}
+.background-page{
+    /* background-image: linear-gradient(#8d2525,#4389A2); */
+    height: 38rem;
+    width: 100%;
+    position: relative;
+}
+.carauselbtn{
+    height: 330px;
+    width: 100px;
+    position: absolute;
+    margin-top: 240px;
+}
+
+.builder{
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background: none;
+    position: relative;
+    top: 36.5rem;
+    text-align: center;
+    font-size: 12px;
+    
+}
+#instalink{
+    color: white;
+}
+/* p{
+    font-size: 20px;
+    z-index: 1;
+
+} */
+.plates{
+    position: absolute;
+    top : 0;
+    left : 0;
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    overflow: auto;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    flex-direction: row;
+    justify-content:center;
+}
+#showBtn{
+    display: block;
+}
+#hideBtn {
+    display: none;
+}
+.innerplate{
+    height: 200px;
+    width: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    
+    background-image: linear-gradient(green,black);
+}
+.innerplate_name{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
